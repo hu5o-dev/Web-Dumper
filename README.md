@@ -74,4 +74,3 @@ If you have any questions, please reach out to [your-email@example.com](mailto:y
 ---
 
 Happy coding! 🚀
-```
