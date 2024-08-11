@@ -25,14 +25,14 @@ pip install requests beautifulsoup4
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/website-downloader.git
+    git clone https://github.com/hu5o-dev/Web-Dumper.git
     cd website-downloader
     ```
 
 2. **Run the script**:
 
     ```bash
-    python website_downloader.py
+    python WebDumper.py
     ```
 
 3. **Enter the URL of the website** when prompted. The script will download the website and save it to a folder named after the website's hostname.
@@ -69,7 +69,7 @@ Feel free to submit issues or pull requests if you have suggestions or improveme
 
 ## Contact 📧
 
-If you have any questions, please reach out to [your-email@example.com](mailto:your-email@example.com).
+If you have any questions, please reach out to [your-email@example.com](mailto:hugo@hugo.city).
 
 ---
 
