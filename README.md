@@ -1,4 +1,4 @@
-# Website Downloader 🌐📥
+# Web Dumper 🌐📥
 
 A Python script to download an entire website, including HTML, CSS, JavaScript, and images. This tool is useful for archiving web pages or for offline browsing.
 
