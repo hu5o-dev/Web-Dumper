@@ -26,7 +26,7 @@ pip install requests beautifulsoup4
 
     ```bash
     git clone https://github.com/hu5o-dev/Web-Dumper.git
-    cd website-downloader
+    cd Web-Dumper
     ```
 
 2. **Run the script**:
