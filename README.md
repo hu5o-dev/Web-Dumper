@@ -69,7 +69,7 @@ Feel free to submit issues or pull requests if you have suggestions or improveme
 
 ## Contact 📧
 
-If you have any questions, please reach out to [your-email@example.com](mailto:hugo@hugo.city).
+If you have any questions, please reach out to [hugo@hugo.city](mailto:hugo@hugo.city).
 
 ---
 
