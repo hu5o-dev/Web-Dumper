@@ -1,4 +1,3 @@
-```markdown
 # Website Downloader 🌐📥
 
 A Python script to download an entire website, including HTML, CSS, JavaScript, and images. This tool is useful for archiving web pages or for offline browsing.
@@ -76,5 +75,3 @@ If you have any questions, please reach out to [your-email@example.com](mailto:y
 
 Happy coding! 🚀
 ```
-
-Feel free to customize the emojis and sections to better suit your style and the specifics of your project!
