@@ -7,7 +7,6 @@ import time
 import sys
 
 def download_file(url, folder):
-    """Download a file from a URL and save it to the specified folder."""
     local_filename = os.path.join(folder, os.path.basename(urlparse(url).path))
     response = requests.get(url, stream=True)
     with open(local_filename, 'wb') as file:
@@ -17,11 +16,10 @@ def download_file(url, folder):
     return local_filename
 
 def download_website(url, folder):
-    """Download the website content including HTML, CSS, JS, and images."""
     if not os.path.exists(folder):
         os.makedirs(folder)
 
-    # Download the HTML content
+    
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     
@@ -29,7 +27,7 @@ def download_website(url, folder):
     with open(html_file_path, 'wb') as file:
         file.write(response.content)
 
-    # Find and download CSS, JS, and images
+    
     assets = []
     for tag in soup.find_all(['link', 'script', 'img']):
         if tag.name == 'link' and tag.get('rel') == ['stylesheet']:
@@ -52,7 +50,7 @@ def download_website(url, folder):
             download_file(asset_url, folder)
             tag['src'] = os.path.basename(asset_url)
 
-    # Save the modified HTML file
+    
     with open(html_file_path, 'w', encoding='utf-8') as file:
         file.write(str(soup))
 
@@ -64,7 +62,7 @@ def animate_download():
             sys.stdout.write("\rDownloading" + dot)
             sys.stdout.flush()
             time.sleep(0.5)
-            # Clear the dots before the next iteration
+            
             sys.stdout.write("\r" + " " * (len("Downloading" + dot)) + "\r")
             sys.stdout.flush()
 
@@ -73,15 +71,15 @@ def main():
     website_name = urlparse(website_url).hostname
     output_folder = f'{website_name}_download'
 
-    # Start the animation in a separate thread
+    
     animation_thread = threading.Thread(target=animate_download)
     animation_thread.daemon = True
     animation_thread.start()
     
-    # Download the website content
+    
     download_website(website_url, output_folder)
     
-    # Stop the animation after download is complete
+    
     sys.stdout.write("\rDownload complete!                \n")
     sys.stdout.flush()
 
